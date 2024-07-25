@@ -1,0 +1,52 @@
+---
+import Certificate from "../icons/Certificate.astro";
+import CodeIcon from "../icons/Code.astro";
+import Layout from "../layouts/Layout.astro";
+import Projects from "../components/Projects.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Studies from "../components/Studies.astro";
+import User from "../icons/User.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout title="Portfolio de Octavio Paz - Desarrollador Web">
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-36">
+			<Hero />
+		</SectionContainer>
+
+		<div class="space-y-24">
+			<SectionContainer id="studies">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+				>
+					<Certificate class="size-7" />
+					Estudios
+				</h2>
+				<Studies />
+			</SectionContainer>
+
+			<SectionContainer id="projects">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+				>
+					<CodeIcon class="size-7" />
+					Proyectos
+				</h2>
+				<Projects />
+			</SectionContainer>
+
+			<SectionContainer id="about-me">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+				>
+					<User class="size-7" />
+					Sobre mí
+				</h2>
+				<AboutMe />
+			</SectionContainer>
+			
+		</div>
+	</main>
+</Layout>

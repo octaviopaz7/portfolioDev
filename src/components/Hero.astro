@@ -1,0 +1,49 @@
+---
+import Badge from "./Badge.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import MailIcon from "../icons/Mail.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import Social from "./Social.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full size-24"
+      src="/public/me.webp"
+      alt="octavio"
+    />
+    <a
+      href="https://www.linkedin.com/in/octavioemanuelpaz/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Octavio Paz
+  </h1>
+  <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300">
+    <strong> Desarrollador web </strong>, estudiante de programación en Universidad Tecnológica Nacional (UTN) y ALURA
+    LATAM. De Tucumán, Argentina 🇦🇷.
+  </p>
+  <nav class="flex gap-4 mt-8 flex-wrap sm:flex-nowrap">
+    <Social href="https://www.linkedin.com/in/octavioemanuelpaz/">
+      <LinkedInIcon class="size-4 md:size-6" />
+      LinkedIn
+    </Social>
+    <Social href="https://github.com/octaviopaz7">
+      <GitHubIcon class="size-4 md:size-6" />
+      GitHub
+    </Social>
+    <Social href="mailto:octavioemanuelpaz@gmail.com">
+      <MailIcon class="size-4 md:size-6" />
+      octavioemanuelpaz@gmail.com
+    </Social>
+  </nav>
+</div>
+

@@ -1,0 +1,30 @@
+---
+import StudiesItem from "./StudiesItem.astro"
+const STUDIES = [
+  {
+    date: "2022 / en curso",
+    title: "Tecnicatura en programación",
+    company: "Universidad Tecnológica Nacional - Facultad Regional Tucumán",
+    description:
+      "Cursando las últimas 3 materias de la carrera.",
+  },
+  {
+    date: "enero / julio 2024",
+    title: "Desarrollador web con especialización en FRONT-END",
+    company: "Alura Latam",
+    description:
+      "Programa Oracle Next Education F2 T6 Front-end de Alura Latam.",
+    link:"/Certificado-ONE.pdf",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    STUDIES.map((studies) => (
+      <li class="">
+        <StudiesItem {...studies} />
+      </li>
+    ))
+  }
+</ol>
